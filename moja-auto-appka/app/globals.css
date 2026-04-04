@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0a0a0c;
+  --color-brand-card: #16161a;
+  --color-brand-border: #26262b;
+  --radius-4xl: 2rem;
+  --radius-5xl: 3rem;
+}
+
+/* OPRAVA KALENDÁRA (vynútenie bieleho textu a modrých akcentov) */
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #2563eb;
+  --rdp-background-color: #1d4ed8;
+  color: white !important;
+}
+
+.rdp-day_selected {
+  background-color: var(--rdp-accent-color) !important;
+  color: white !important;
+}
+
+.rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+  background-color: #26262b !important;
+}
+
+.rdp-head_cell {
+  color: #6b7280 !important;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
