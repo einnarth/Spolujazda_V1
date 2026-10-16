@@ -1,16 +1,18 @@
-# Ride Tracker
+# Spolujazda
 
-Webová aplikácia na sledovanie jázd a správu nákladov na spolujazdu medzi priateľmi.
+> A web application for tracking shared rides and managing carpooling costs among friends.
 
-## Popis aplikácie
-Aplikácia slúži na prehľadné zaznamenávanie spoločných ciest autom. Admin má k dispozícii rozhranie s kalendárom, cez ktoré priraďuje jazdy konkrétnym pasažierom. Systém automaticky prepočítava celkový dlh pre každú osobu a generuje detailnú históriu ciest s konkrétnymi dátumami. Prístup je podmienený prihlásením, pričom bežní používatelia vidia výhradne svoje vlastné záznamy a sumu na zaplatenie.
+This application provides a simple and transparent way to record shared car trips. It features an admin dashboard for assigning rides via a calendar and automatically calculates individual debts. The system includes role-based access control, ensuring that regular users can only view their own trip history and pending payments.
 
-## Live Demo
-Aplikácia je dostupná na: [https://spolujazda-v1.vercel.app/]
+## ✨ Features
+- **Ride Management:** Easy assignment of rides to specific passengers using an interactive calendar interface.
+- **Debt Overview:** Automatic calculation of the total amount due for each member.
+- **Trip History:** Detailed list of past rides, including exact dates and costs.
+- **Admin Tools:** Capabilities to manage the passenger list and delete records.
+- **Security & Privacy:** Secure authentication and data protection powered by Supabase Auth and Row Level Security (RLS) policies.
 
-## Hlavné funkcie
-* **Správa jázd:** Jednoduché priraďovanie jázd pasažierom cez kalendár.
-* **Prehľad dlhov:** Automatický výpočet sumy na zaplatenie pre každého člena.
-* **História ciest:** Detailný zoznam jázd s dátumami a cenou.
-* **Admin nástroje:** Možnosť mazať záznamy a spravovať zoznam pasažierov.
-* **Bezpečnosť:** Autentifikácia a ochrana dát cez Supabase Auth a RLS politiky.
+## 🛠️ Tech Stack
+* **Frontend:** Next.js (React), TypeScript, Tailwind CSS
+* **Backend & Database:** Supabase (PostgreSQL)
+* **Authentication:** Supabase Auth
+* **Hosting:** Vercel
